@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/node-forge@0.7.0/dist/forge.min.js"></script>
+    <script>
+      let PUBLIC_KEY = "XXX";
+      let encrypt = (text, publicKey) => {
+        var publicBytes = forge.util.decode64(publicKey);
+        var pkeyAsn1 = forge.asn1.fromDer(publicBytes);
+        var publicKey = forge.pki.publicKeyFromAsn1(pkeyAsn1);
+        let encrypted = publicKey.encrypt(text, "RSA-OAEP", {
+          md: forge.md.sha256.create(),
+        });
+        // let encrypted = publicKey.encrypt(toEncrypt, "RSA-OAEP", {
+        //   md: forge.md.sha256.create(),
+        // });
+        return forge.util.encode64(encrypted);
+      };
+
+      console.log(encrypt("hotdog_is_a_s@ndwich.com", PUBLIC_KEY).toString());
+    </script>
+  </body>
+</html>

@@ -14,7 +14,7 @@ In this repository, some encryption examples provided in different programming l
 
 ## Swift
 
-[SwiftEncryptionSample](SwiftEncryptionSample.swift) 
+[SwiftEncryptionSample](SwiftEncryptionSample.swift)
 
 ## Kotlin
 
@@ -28,5 +28,10 @@ In this repository, some encryption examples provided in different programming l
 
 [ReactNativeSample](ReactNativeSample.js)
 
+## JavaScript
+
+[JavascriptSample](JavaScriptSample.html)
+
 ### License
+
 please see [LICENSE](LICENSE)
