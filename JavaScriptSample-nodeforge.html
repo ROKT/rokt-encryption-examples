@@ -17,9 +17,6 @@
         let encrypted = publicKey.encrypt(text, "RSA-OAEP", {
           md: forge.md.sha256.create(),
         });
-        // let encrypted = publicKey.encrypt(toEncrypt, "RSA-OAEP", {
-        //   md: forge.md.sha256.create(),
-        // });
         return forge.util.encode64(encrypted);
       };
 
