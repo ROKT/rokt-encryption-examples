@@ -30,7 +30,8 @@ In this repository, some encryption examples provided in different programming l
 
 ## JavaScript
 
-[JavascriptSample](JavaScriptSample.html)
+[JavascriptSample-nodeforge](JavaScriptSample-nodeforge.html)
+[JavascriptSample-subtlecrypto](JavaScriptSample-subtlecrypto.html)
 
 ### License
 
