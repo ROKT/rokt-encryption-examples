@@ -8,26 +8,27 @@
   </head>
   <body>
     <div></div>
-
+    More Details in Developer Console
     <script>
       (async () => {
         const publicKey = "xxx"; //add the public encryption key here
-        const TO_ENCRYPT = "hotdog_is_a_s@ndwich.com"; // this is what we are encrypting
+        const toEncrypt = "hotdog_is_a_s@ndwich.com"; // this is what we are encrypting
 
         const pub = await importPublicKey(publicKey);
         const encryptedRSA = await encryptRSA(
           pub,
-          new TextEncoder().encode(TO_ENCRYPT)
+          new TextEncoder().encode(toEncrypt)
         );
 
-        const encrypted = _arrayBufferToBase64(encryptedRSA);
-        console.log(encrypted);
+        const encrypted = _arrayBufferToBase64(encryptedRSA); // this is the value you send over
+        // console.log(encrypted)
 
+        // helper functions
         function _arrayBufferToBase64(buffer) {
-          var binary = "";
-          var bytes = new Uint8Array(buffer);
-          var len = bytes.byteLength;
-          for (var i = 0; i < len; i++) {
+          const binary = "";
+          const bytes = new Uint8Array(buffer);
+          const len = bytes.byteLength;
+          for (let i = 0; i < len; i++) {
             binary += String.fromCharCode(bytes[i]);
           }
           return window.btoa(binary);
@@ -57,7 +58,7 @@
         }
 
         function getSpkiDer(pemContents) {
-          var binaryDerString = window.atob(pemContents);
+          const binaryDerString = window.atob(pemContents);
           return str2ab(binaryDerString);
         }
         function str2ab(str) {
