@@ -6,6 +6,10 @@ In this repository, some encryption examples provided in different programming l
 
 [NetCoreEncryptionSample](NetCoreEncryptionSample.cs)
 
+## Golang
+
+[GolangEncryptionSample](GolangEncryptionSample.go)
+
 ## NodeJS
 
 [NodeJsNodeRsaEncryptionSample](NodeJsNodeRsaEncryptionSample.js)
