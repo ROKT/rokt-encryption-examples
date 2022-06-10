@@ -19,7 +19,7 @@ func main() {
 	const (
 		publicKeyText = `
 -----BEGIN RSA PUBLIC KEY-----
-MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoOGnMg6/oJEYRYaXSzSqAH6hOz7We56O7Ixd7mTdLQ/n3Ce9fd8sy5IvXJrA7/m3z2eX8uxtIvAEXSySJZgJvvdV5xHuFgWJ96bodOzKiI+vf4/uxAKJ/EE6unNNCa/uEsAasUg7+Yv+WkFYrhNVXEzu0d/+V/RG4oha8cVYUA3YfuXwlGkq5SJBIDndLoYFKA9o9AVhZgA/bqCy0PuhwAwvM9lYQs25c5WGA8Wnmaeyugeq1QrjiKA+NK1ftZcivOzJ3SBYj7NfAW6jdk+pL95cSBaTKoOHwEJutN303UEuzu/S5pazNpCo2AaiPtVLm56AGNhesaRCidXlkOyODwIDAQAB
+XXXX
 -----END RSA PUBLIC KEY-----
 `
 		sensitiveData = "user@site.com"
