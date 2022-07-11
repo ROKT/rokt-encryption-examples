@@ -4,39 +4,36 @@ In this repository, some encryption examples provided in different programming l
 
 ## C#
 
-[NetCoreEncryptionSample](NetCoreEncryptionSample.cs)
+[NetCoreEncryptionSample](./c_sharp/NetCoreEncryptionSample.cs)
 
 ## Golang
 
-[GolangEncryptionSample](GolangEncryptionSample.go)
-
-## NodeJS
-
-[NodeJsNodeRsaEncryptionSample](NodeJsNodeRsaEncryptionSample.js)
-
-[NodeJsNodeForgeEncryptionSample](NodeJsNodeForgeEncryptionSample.js)
-
-## Swift
-
-[SwiftEncryptionSample](SwiftEncryptionSample.swift)
-
-## Kotlin
-
-[KotlinEncryptionSample](KotlinEncryptionSample.kt)
+[GolangEncryptionSample](./golang/GolangEncryptionSample.go)
 
 ## Java
 
-[JavaEncryptionSample](JavaEncryptionSample.java)
-
-## ReactNative
-
-[ReactNativeSample](ReactNativeSample.js)
+[JavaEncryptionSample](./java/JavaEncryptionSample.java)
 
 ## JavaScript
 
-[JavascriptSample-nodeforge](JavaScriptSample-nodeforge.html)
-[JavascriptSample-subtlecrypto](JavaScriptSample-subtlecrypto.html)
+[JavaScriptSample-nodeforge](./javascript/JavaScriptSample-nodeforge.html)
+
+[JavaScriptSample-subtlecrypto](./javascript/JavaScriptSample-subtlecrypto.html)
+
+[NodeJsNodeRsaEncryptionSample](./javascript/NodeJsNodeRsaEncryptionSample.js)
+
+[NodeJsNodeForgeEncryptionSample](./javascript/NodeJsNodeForgeEncryptionSample.js)
+
+[ReactNativeSample](./javascript/ReactNativeSample.js)
+
+## Kotlin
+
+[KotlinEncryptionSample](./kotlin/KotlinEncryptionSample.kt)
+
+## Swift
+
+[SwiftEncryptionSample](./swift/SwiftEncryptionSample.swift)
 
 ### License
 
-please see [LICENSE](LICENSE)
+Please see [LICENSE](LICENSE)
