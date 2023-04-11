@@ -30,6 +30,10 @@ In this repository, some encryption examples provided in different programming l
 
 [KotlinEncryptionSample](./kotlin/KotlinEncryptionSample.kt)
 
+By default, Rokt provides partners with an RSA public key. To use this key with the above Kotlin encryption example, please first convert your RSA public key to an x.509 public key with the following steps:
+- Ensure that the Base64 section of the key has a line break every 80 characters
+- `openssl rsa -pubin -in /tmp/k.rsa -RSAPublicKey_in -inform pem`
+
 ## Swift
 
 [SwiftEncryptionSample](./swift/SwiftEncryptionSample.swift)
